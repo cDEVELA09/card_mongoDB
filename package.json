@@ -1,0 +1,13 @@
+{
+  "name": "mern-express-react-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start:server": "npm --prefix server start",
+    "start:client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

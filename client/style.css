@@ -1,0 +1,134 @@
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    padding: 30px;
+    background: #f3f3f3;
+}
+
+.app-root h1 {
+    margin: 0 0 18px 0;
+    font-size: 24px;
+}
+
+.cards-list {
+    display: grid;
+    gap: 16px;
+}
+
+.business-card {
+    display: flex;
+    max-width: 500px;
+    height: 230px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+    background: #1a1a1a;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    width: 180%;
+    height: 180%;
+    background: radial-gradient(circle at top left, #ff007f33, transparent 70%);
+}
+
+.card-left {
+    flex: 0 0 35%;
+    color: white;
+    padding: 26px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #e84393 0%, #b84394 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card-right {
+    flex: 1 1 65%;
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #f5b9d6;
+}
+
+.role {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #e84393; /* pink divider */
+    margin: 8px 0;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.icon {
+    width: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.card-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card-right a:hover {
+    color: #e84393;
+    text-decoration: underline;
+}
+
+.muted {
+    color: #888;
+}
+
+.error {
+    color: #a00;
+}
+
+.no-contacts {
+    color: #666;
+}
